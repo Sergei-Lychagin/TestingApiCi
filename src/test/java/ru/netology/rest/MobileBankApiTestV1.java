@@ -20,7 +20,7 @@ class MobileBankApiTestV1 {
                 // Проверки
                 .then()
                 .statusCode(200)
-                .body("[1].currency", equalTo("USB"))
+                .body("[1].currency", equalTo("USD"))
                 .body(matchesJsonSchemaInClasspath("accounts.schema.json"));
 
     }
